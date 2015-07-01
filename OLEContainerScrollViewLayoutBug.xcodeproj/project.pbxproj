@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		026516F61B4425F3007135CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 026516F51B4425F3007135CB /* main.m */; };
+		026516F91B4425F3007135CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 026516F81B4425F3007135CB /* AppDelegate.m */; };
+		026516FC1B4425F3007135CB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 026516FB1B4425F3007135CB /* ViewController.m */; };
+		026516FF1B4425F3007135CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026516FD1B4425F3007135CB /* Main.storyboard */; };
+		026517011B4425F3007135CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026517001B4425F3007135CB /* Images.xcassets */; };
+		026517041B4425F3007135CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 026517021B4425F3007135CB /* LaunchScreen.xib */; };
+		026517101B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0265170F1B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.m */; };
+		026517401B4426C1007135CB /* OLEContainerScrollView+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 026517381B4426C1007135CB /* OLEContainerScrollView+Swizzling.m */; };
+		026517411B4426C1007135CB /* OLEContainerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0265173A1B4426C1007135CB /* OLEContainerScrollView.m */; };
+		026517421B4426C1007135CB /* OLEContainerScrollViewContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0265173D1B4426C1007135CB /* OLEContainerScrollViewContentView.m */; };
+		026517431B4426C1007135CB /* OLESwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0265173F1B4426C1007135CB /* OLESwizzling.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0265170A1B4425F3007135CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 026516E81B4425F3007135CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 026516EF1B4425F3007135CB;
+			remoteInfo = OLEContainerScrollViewLayoutBug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		026516F01B4425F3007135CB /* OLEContainerScrollViewLayoutBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OLEContainerScrollViewLayoutBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		026516F41B4425F3007135CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026516F51B4425F3007135CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		026516F71B4425F3007135CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		026516F81B4425F3007135CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		026516FA1B4425F3007135CB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		026516FB1B4425F3007135CB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		026516FE1B4425F3007135CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		026517001B4425F3007135CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		026517031B4425F3007135CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		026517091B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OLEContainerScrollViewLayoutBugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0265170E1B4425F3007135CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0265170F1B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OLEContainerScrollViewLayoutBugTests.m; sourceTree = "<group>"; };
+		026517371B4426C1007135CB /* OLEContainerScrollView+Swizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OLEContainerScrollView+Swizzling.h"; sourceTree = "<group>"; };
+		026517381B4426C1007135CB /* OLEContainerScrollView+Swizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OLEContainerScrollView+Swizzling.m"; sourceTree = "<group>"; };
+		026517391B4426C1007135CB /* OLEContainerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLEContainerScrollView.h; sourceTree = "<group>"; };
+		0265173A1B4426C1007135CB /* OLEContainerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLEContainerScrollView.m; sourceTree = "<group>"; };
+		0265173B1B4426C1007135CB /* OLEContainerScrollView_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLEContainerScrollView_Private.h; sourceTree = "<group>"; };
+		0265173C1B4426C1007135CB /* OLEContainerScrollViewContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLEContainerScrollViewContentView.h; sourceTree = "<group>"; };
+		0265173D1B4426C1007135CB /* OLEContainerScrollViewContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLEContainerScrollViewContentView.m; sourceTree = "<group>"; };
+		0265173E1B4426C1007135CB /* OLESwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OLESwizzling.h; sourceTree = "<group>"; };
+		0265173F1B4426C1007135CB /* OLESwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OLESwizzling.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		026516ED1B4425F3007135CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026517061B4425F3007135CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		026516E71B4425F3007135CB = {
+			isa = PBXGroup;
+			children = (
+				026516F21B4425F3007135CB /* OLEContainerScrollViewLayoutBug */,
+				0265170C1B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests */,
+				026516F11B4425F3007135CB /* Products */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		026516F11B4425F3007135CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				026516F01B4425F3007135CB /* OLEContainerScrollViewLayoutBug.app */,
+				026517091B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		026516F21B4425F3007135CB /* OLEContainerScrollViewLayoutBug */ = {
+			isa = PBXGroup;
+			children = (
+				026517361B4426C1007135CB /* OLEContainerScrollView */,
+				026516F71B4425F3007135CB /* AppDelegate.h */,
+				026516F81B4425F3007135CB /* AppDelegate.m */,
+				026516FA1B4425F3007135CB /* ViewController.h */,
+				026516FB1B4425F3007135CB /* ViewController.m */,
+				026516FD1B4425F3007135CB /* Main.storyboard */,
+				026517001B4425F3007135CB /* Images.xcassets */,
+				026517021B4425F3007135CB /* LaunchScreen.xib */,
+				026516F31B4425F3007135CB /* Supporting Files */,
+			);
+			path = OLEContainerScrollViewLayoutBug;
+			sourceTree = "<group>";
+		};
+		026516F31B4425F3007135CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				026516F41B4425F3007135CB /* Info.plist */,
+				026516F51B4425F3007135CB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0265170C1B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests */ = {
+			isa = PBXGroup;
+			children = (
+				0265170F1B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.m */,
+				0265170D1B4425F3007135CB /* Supporting Files */,
+			);
+			path = OLEContainerScrollViewLayoutBugTests;
+			sourceTree = "<group>";
+		};
+		0265170D1B4425F3007135CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0265170E1B4425F3007135CB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		026517361B4426C1007135CB /* OLEContainerScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				026517371B4426C1007135CB /* OLEContainerScrollView+Swizzling.h */,
+				026517381B4426C1007135CB /* OLEContainerScrollView+Swizzling.m */,
+				026517391B4426C1007135CB /* OLEContainerScrollView.h */,
+				0265173A1B4426C1007135CB /* OLEContainerScrollView.m */,
+				0265173B1B4426C1007135CB /* OLEContainerScrollView_Private.h */,
+				0265173C1B4426C1007135CB /* OLEContainerScrollViewContentView.h */,
+				0265173D1B4426C1007135CB /* OLEContainerScrollViewContentView.m */,
+				0265173E1B4426C1007135CB /* OLESwizzling.h */,
+				0265173F1B4426C1007135CB /* OLESwizzling.m */,
+			);
+			path = OLEContainerScrollView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		026516EF1B4425F3007135CB /* OLEContainerScrollViewLayoutBug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026517131B4425F3007135CB /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewLayoutBug" */;
+			buildPhases = (
+				026516EC1B4425F3007135CB /* Sources */,
+				026516ED1B4425F3007135CB /* Frameworks */,
+				026516EE1B4425F3007135CB /* Resources */,
+				CF85388BC9F24F8EA6586A97 /* Warn for TODO and FIXME comments */,
+				7B8E17F599377E4C098DFECB /* Set version number */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OLEContainerScrollViewLayoutBug;
+			productName = OLEContainerScrollViewLayoutBug;
+			productReference = 026516F01B4425F3007135CB /* OLEContainerScrollViewLayoutBug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		026517081B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 026517161B4425F3007135CB /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewLayoutBugTests" */;
+			buildPhases = (
+				026517051B4425F3007135CB /* Sources */,
+				026517061B4425F3007135CB /* Frameworks */,
+				026517071B4425F3007135CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0265170B1B4425F3007135CB /* PBXTargetDependency */,
+			);
+			name = OLEContainerScrollViewLayoutBugTests;
+			productName = OLEContainerScrollViewLayoutBugTests;
+			productReference = 026517091B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		026516E81B4425F3007135CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Maxim Pavlov";
+				TargetAttributes = {
+					026516EF1B4425F3007135CB = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 69GYXKL3AK;
+					};
+					026517081B4425F3007135CB = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 026516EF1B4425F3007135CB;
+					};
+				};
+			};
+			buildConfigurationList = 026516EB1B4425F3007135CB /* Build configuration list for PBXProject "OLEContainerScrollViewLayoutBug" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 026516E71B4425F3007135CB;
+			productRefGroup = 026516F11B4425F3007135CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				026516EF1B4425F3007135CB /* OLEContainerScrollViewLayoutBug */,
+				026517081B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		026516EE1B4425F3007135CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026516FF1B4425F3007135CB /* Main.storyboard in Resources */,
+				026517041B4425F3007135CB /* LaunchScreen.xib in Resources */,
+				026517011B4425F3007135CB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026517071B4425F3007135CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B8E17F599377E4C098DFECB /* Set version number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set version number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git=$(sh /etc/profile; which git)\ngit_release_version=$(\"$git\" describe --tags --always --abbrev=0)\nnumber_of_commits=$(\"$git\" rev-list master | wc -l | tr -d ' ')\ntarget_plist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\ndsym_plist=\"$DWARF_DSYM_FOLDER_PATH/$DWARF_DSYM_FILE_NAME/Contents/Info.plist\"\n\nfor plist in \"$target_plist\" \"$dsym_plist\"; do\n  if [ -f \"$plist\" ]; then\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $number_of_commits\" \"$plist\"\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleShortVersionString ${git_release_version#*v}\" \"$plist\"\n  fi\ndone\n";
+		};
+		CF85388BC9F24F8EA6586A97 /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"swift|h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026516EC1B4425F3007135CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026516FC1B4425F3007135CB /* ViewController.m in Sources */,
+				026517421B4426C1007135CB /* OLEContainerScrollViewContentView.m in Sources */,
+				026516F91B4425F3007135CB /* AppDelegate.m in Sources */,
+				026517401B4426C1007135CB /* OLEContainerScrollView+Swizzling.m in Sources */,
+				026516F61B4425F3007135CB /* main.m in Sources */,
+				026517411B4426C1007135CB /* OLEContainerScrollView.m in Sources */,
+				026517431B4426C1007135CB /* OLESwizzling.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		026517051B4425F3007135CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				026517101B4425F3007135CB /* OLEContainerScrollViewLayoutBugTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0265170B1B4425F3007135CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 026516EF1B4425F3007135CB /* OLEContainerScrollViewLayoutBug */;
+			targetProxy = 0265170A1B4425F3007135CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		026516FD1B4425F3007135CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026516FE1B4425F3007135CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		026517021B4425F3007135CB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				026517031B4425F3007135CB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		026517111B4425F3007135CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		026517121B4425F3007135CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		026517141B4425F3007135CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OLEContainerScrollViewLayoutBug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		026517151B4425F3007135CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = OLEContainerScrollViewLayoutBug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		026517171B4425F3007135CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OLEContainerScrollViewLayoutBugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLEContainerScrollViewLayoutBug.app/OLEContainerScrollViewLayoutBug";
+			};
+			name = Debug;
+		};
+		026517181B4425F3007135CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OLEContainerScrollViewLayoutBugTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OLEContainerScrollViewLayoutBug.app/OLEContainerScrollViewLayoutBug";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		026516EB1B4425F3007135CB /* Build configuration list for PBXProject "OLEContainerScrollViewLayoutBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026517111B4425F3007135CB /* Debug */,
+				026517121B4425F3007135CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026517131B4425F3007135CB /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewLayoutBug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026517141B4425F3007135CB /* Debug */,
+				026517151B4425F3007135CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		026517161B4425F3007135CB /* Build configuration list for PBXNativeTarget "OLEContainerScrollViewLayoutBugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				026517171B4425F3007135CB /* Debug */,
+				026517181B4425F3007135CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 026516E81B4425F3007135CB /* Project object */;
+}
